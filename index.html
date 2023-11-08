@@ -17,13 +17,16 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <nav>
-            <a href="###">Présentation</a>
-            <a href="">Évènements</a>
-            <a href="">Cartes</a>
-            <a href="">Valeurs</a>
-            <a href="">Information</a>
-          </nav>
+          <div class="header">
+            <nav class="nav-header">
+              <a href="###">Présentation</a>
+              <a href="">Évènements</a>
+              <a href="">Cartes</a>
+              <a href="">Valeurs</a>
+              <a href="">Information</a>
+              <img src="img/burger.svg" alt="" />
+            </nav>
+          </div>
         </div>
         <div class="col-12">
           <h1>Jakarta</h1>
@@ -34,7 +37,7 @@
           <h2>Presentation</h2>
         </div>
         <div class="col-12 col-xl-6">
-          <p>
+          <p class="block-text">
             Au cœur de notre restaurant, nous vous invitons à vivre une
             expérience unique, où convivialité et chaleur se marient pour créer
             des moments inoubliables. Chez nous, il n'est pas simplement
@@ -43,39 +46,60 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row evenements">
         <div class="col-12 col-xl-11">
           <h2>Evenements</h2>
         </div>
         <div class="col-12 col-xl-4">
-          <h3>Glass animals</h3>
-          <p class="date">29.09.2023</p>
-          <p>
-            Le style musical de Glass Animals a été décrit comme le rock
-            indépendant, la pop psychédélique, la pop indépendante, le rock
-            électronique et la pop alternative.
-          </p>
-          <a href=""><img src="" alt="flèche" /></a>
+          <div class="section-evenement">
+            <div class="flex-section-evenement">
+              <img src="img/concert.png" alt="" />
+              <h3>Glass animals</h3>
+              <p class="date">29.09.2023</p>
+              <p class="text-evenement">
+                Le style musical de Glass Animals a été décrit comme le rock
+                indépendant, la pop psychédélique, la pop indépendante, le rock
+                électronique et la pop alternative.
+              </p>
+            </div>
+            <a href="" class="icon-arrow">
+              <img src="img/icon_fleche.svg" alt="flèche" />
+            </a>
+          </div>
         </div>
         <div class="col-12 col-xl-4">
-          <h3>Everything ...</h3>
-          <p class="date">07.10.2023</p>
-          <p>
-            Evelyn Wang tient une laverie avec son mari, Waymond qui veut
-            divorcer. Evelyn est à bout. C'est alors qu'elle fait la
-            connaissance d'Alpha Waymond. Ce dernier ...
-          </p>
-          <a href=""><img src="" alt="flèche" /></a>
+          <div class="section-evenement">
+            <div class="flex-section-evenement">
+              <img src="img/film.png" alt="" />
+              <h3>Everything ...</h3>
+              <p class="date">07.10.2023</p>
+              <p class="text-evenement">
+                Evelyn Wang tient une laverie avec son mari, Waymond qui veut
+                divorcer. Evelyn est à bout. C'est alors qu'elle fait la
+                connaissance d'Alpha Waymond. Ce dernier ...
+              </p>
+            </div>
+            <a href="###" class="icon-arrow">
+              <img src="img/icon_fleche.svg" alt="flèche" />
+            </a>
+          </div>
         </div>
         <div class="col-12 col-xl-4">
-          <h3>Soirée jeu</h3>
-          <p class="date">20.10.2023</p>
-          <h4>Monopoly</h4>
-          <p>
-            Il faut être l'ultime joueur à ne pas faire faillite. Pour cela,
-            lancez les dés et déplacez-vous sur le plateau : achetez,...
-          </p>
-          <a href=""><img src="" alt="flèche" /></a>
+          <div class="section-evenement">
+            <div class="flex-section-evenement">
+              <img src="img/monopoly.png" alt="" />
+              <h3>Soirée jeu</h3>
+              <p class="date">20.10.2023</p>
+              <h4>Monopoly</h4>
+              <p class="text-evenement">
+                Il faut être l'ultime joueur à ne pas faire faillite. Pour cela,
+                lancez les dés et déplacez-vous sur le plateau : achetez,...
+              </p>
+            </div>
+            <a href="" class="icon-arrow">
+              <img src="img/icon_fleche.svg" alt="flèche" />
+            </a>
+          </div>
         </div>
         <div class="col-12">
           <nav>
@@ -88,7 +112,7 @@
           <h2>Cartes des menus</h2>
         </div>
         <div class="col-12 col-xl-6">
-          <div>
+          <div class="menu-carte">
             <div>
               <h5>Nasi Goreng</h5>
               <p class="text-menu">
@@ -127,7 +151,7 @@
           </div>
         </div>
         <div class="col-12 col-xl-6">
-          <div>
+          <div class="menu-carte menu-two">
             <div>
               <h5>Nasi Uduk</h5>
               <p class="text-menu">
@@ -162,12 +186,16 @@
             </div>
           </div>
         </div>
-        <div class="col-4 col-xl-4">Voir toute la carte</div>
+        <div class="col-4 col-xl-4">
+          <nav>
+            <a href="">Voir toute la carte</a>
+          </nav>
+        </div>
       </div>
       <div class="row">
         <div class="col-12 col-xl-6">
           <h2>Valeurs</h2>
-          <p>
+          <p class="block-text">
             Notre restaurant est bien plus qu'un simple lieu pour se restaurer ;
             c'est un lieu où vous pouvez vous installer, vous détendre et vous
             sentir chez vous. Lorsque vous franchissez nos portes, vous entrez
@@ -208,7 +236,7 @@
         </div>
         <div class="col-12 col-xl-6">
           <h2>Vegan Friendly</h2>
-          <p>
+          <p class="block-text">
             Notre établissement se démarque des autres en proposant une
             alternative VÉGAN de la totalité de notre carte. Ainsi, chacun peut
             profiter de son plat sans réfléchir!

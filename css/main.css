@@ -1,6 +1,14 @@
+/* ---- */
+
 :root {
   --orange: #f3a002;
+  --color-footer-haeder: #df5413;
+  --button-title: #55aa7c;
+  --blanco: #fff;
+  --carte-menu: #fbf5af;
 }
+
+/* ---- */
 
 * {
   box-sizing: border-box;
@@ -32,43 +40,136 @@ video {
   block-size: auto;
   vertical-align: middle;
 }
+@media (max-width: 500px) {
+  html {
+    max-width: 320px;
+    margin: auto;
+  }
 
-h2 {
-  overflow: hidden;
-  color: var(--orange, #f3a002);
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  h2 {
+    overflow: hidden;
+    color: var(--orange);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
 
-  /* Phone/Title section */
-  font-family: Inter;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h1 {
+    color: var(--blanco);
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-image: url(../img/bg-header.png);
+    padding: 120px 48px 151px;
+  }
+
+  .header {
+    background: var(--color-footer-haeder);
+    width: 320px;
+    height: 69px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .nav-header > a {
+    display: none;
+  }
+
+  .block-text {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    width: 210px;
+    height: 275px;
+  }
+
+  .evenements {
+    background: var(--orange);
+  }
+
+  .section-evenement {
+    background: var(--blanco);
+    margin-bottom: 29px;
+  }
+
+  .flex-section-evenement {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .date {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+  }
+
+  .icon-arrow {
+    border-radius: 5px;
+    background: var(--button-title);
+    padding: 6px 11px 4px;
+    align-self: flex-end;
+  }
+
+  .text-evenement {
+    display: none;
+  }
+
+  .menu-carte {
+    background: var(--carte-menu);
+    padding: 34px 15px;
+    margin-bottom: 27px;
+  }
+
+  h5 {
+    color: var(--button-title);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .text-menu {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .menu-two {
+    display: none;
+  }
 }
 
-p {
-  overflow: hidden;
-  color: var(--text-black, #000);
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  /* Phone/paragraphe */
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-h1 {
-  color: var(--blanco, #fff);
-  text-align: center;
-  font-family: "Paytone One", sans-serif;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-image: url(../img/bg-header.png);
-  padding: 120px 48px 151px;
+@media (min-width: 501px) and (max-width: 2000px) {
+  h1 {
+    color: var(--blanco);
+    text-align: center;
+    font-family: Paytone One;
+    font-size: 80px;
+    font-weight: 400;
+  }
 }
