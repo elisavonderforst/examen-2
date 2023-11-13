@@ -42,9 +42,40 @@ video {
 }
 
 @media (max-width: 500px) {
-  html {
-    max-width: 320px;
-    margin: 0;
+  .burger-menu {
+    background: var(--color-footer-haeder);
+  }
+
+  .header-nav {
+    height: 69px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .header-nav > nav > a {
+    display: none;
+  }
+
+  .img-header {
+    background-image: url(../img/bg-header.png);
+    background-repeat: no-repeat;
+    padding: 120px 48px 151px;
+  }
+
+  h1 {
+    color: var(--blanco);
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 0;
   }
 
   h2 {
@@ -60,53 +91,12 @@ video {
     margin-bottom: 20px;
   }
 
-  p {
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  h1 {
-    color: var(--blanco);
-    text-align: center;
-    font-family: "Paytone One", sans-serif;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-right: 0;
-  }
-
-  .logo-header {
-    background-image: url(../img/bg-header.png);
-    padding: 120px 48px 151px;
-  }
-
-  .header {
-    background: var(--color-footer-haeder);
-    width: 320px;
-    height: 69px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-right: 20px;
-    padding-top: 17px;
-    padding-bottom: 17px;
-  }
-
-  .nav-header > a {
-    display: none;
-  }
-
   .block-text {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     width: 210px;
     height: 275px;
-    margin-left: 95px;
     margin-bottom: 92px;
   }
 
@@ -205,5 +195,6 @@ video {
     font-family: Paytone One;
     font-size: 80px;
     font-weight: 400;
+    text-transform: uppercase;
   }
 }
