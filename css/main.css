@@ -40,22 +40,24 @@ video {
   block-size: auto;
   vertical-align: middle;
 }
+
 @media (max-width: 500px) {
   html {
     max-width: 320px;
-    margin: auto;
+    margin: 0;
   }
 
   h2 {
     overflow: hidden;
     color: var(--orange);
-    text-overflow: ellipsis;
-    white-space: nowrap;
     font-family: Inter;
+    text-transform: uppercase;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 45px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -74,6 +76,10 @@ video {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-right: 0;
+  }
+
+  .logo-header {
     background-image: url(../img/bg-header.png);
     padding: 120px 48px 151px;
   }
@@ -95,15 +101,23 @@ video {
   }
 
   .block-text {
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     width: 210px;
     height: 275px;
+    margin-left: 95px;
+    margin-bottom: 92px;
   }
 
   .evenements {
     background: var(--orange);
+  }
+
+  .title-evenements {
+    color: var(--blanco);
+    margin-top: 19px;
+    margin-bottom: 23px;
   }
 
   .section-evenement {
@@ -117,7 +131,7 @@ video {
   }
 
   h3 {
-    text-overflow: ellipsis;
+    text-transform: uppercase;
     font-family: Inter;
     font-size: 22px;
     font-weight: 700;
@@ -141,6 +155,18 @@ video {
     display: none;
   }
 
+  .button {
+    background: var(--button-title);
+    color: var(--blanco);
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 10px 48px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: block;
+  }
+
   .menu-carte {
     background: var(--carte-menu);
     padding: 34px 15px;
@@ -161,6 +187,14 @@ video {
 
   .menu-two {
     display: none;
+  }
+
+  footer {
+    background: var(--color-footer-haeder);
+  }
+
+  .title-footer {
+    color: var(--blanco);
   }
 }
 
