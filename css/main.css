@@ -95,8 +95,6 @@ video {
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    width: 210px;
-    height: 275px;
     margin-bottom: 92px;
   }
 
@@ -105,7 +103,7 @@ video {
     padding-bottom: 29px;
   }
 
-  .title-evenements {
+  .title-orange {
     color: var(--blanco);
     margin-top: 19px;
     margin-bottom: 23px;
@@ -174,13 +172,13 @@ video {
     margin-right: 0;
   }
 
-  .title-menus {
+  .title {
     margin-top: 84px;
   }
 
   .menu-carte {
     background: var(--carte-menu);
-    padding: 34px 15px;
+    padding: 35px 15px 6px;
     margin-bottom: 27px;
   }
 
@@ -201,6 +199,51 @@ video {
 
   .menu-two {
     display: none;
+  }
+
+  .button-menu {
+    margin-bottom: 92px;
+    margin-left: 1px;
+  }
+
+  .valeurs {
+    background: var(--orange);
+  }
+
+  .text-white {
+    margin-bottom: 24px;
+    color: var(--blanco);
+  }
+
+  span {
+    color: var(--button-title);
+  }
+
+  .text-source {
+    line-height: 40px;
+  }
+
+  .source-two {
+    margin-bottom: 79px;
+  }
+
+  .vegan {
+    background: var(--orange);
+  }
+
+  hr {
+    border: 3px solid var(--orange);
+  }
+
+  .hr-maps {
+    margin-top: 93px;
+  }
+
+  .title-contact {
+    color: var(--button-title);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 14px 0 14px;
   }
 
   footer {
