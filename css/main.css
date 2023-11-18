@@ -277,6 +277,12 @@ video {
     color: var(--blanco);
   }
 
+  .mail-box {
+    display: flex;
+    color: var(--color-footer-haeder);
+    background: var(--blanco);
+  }
+
   .desktop {
     display: none;
   }
