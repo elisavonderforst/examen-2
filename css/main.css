@@ -19,6 +19,7 @@
 html {
   font-size: 16px;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,7 +37,6 @@ a {
 
 img,
 video {
-  max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
 }
@@ -45,7 +45,35 @@ video {
   .burger-menu {
     background: var(--color-footer-haeder);
   }
+h1 {
+  text-align: center;
+  font-family: "Paytone One", sans-serif;
+  text-transform: uppercase;
+}
 
+.evenements,
+.vegan,
+.valeurs {
+  background: var(--orange);
+}
+
+.text-white {
+  color: var(--blanco);
+}
+
+.title-orange {
+  color: var(--blanco);
+}
+
+.burger-menu {
+  background: var(--color-footer-haeder);
+}
+
+span {
+  color: var(--button-title);
+}
+
+@media (max-width: 500px) {
   .header-nav {
     height: 69px;
     display: flex;
@@ -63,19 +91,18 @@ video {
   .img-header {
     background-image: url(../img/bg-header.png);
     background-repeat: no-repeat;
-    padding: 120px 48px 151px;
+    padding: 120px 48px 0;
   }
 
   h1 {
     color: var(--blanco);
-    text-align: center;
-    font-family: "Paytone One", sans-serif;
-    text-transform: uppercase;
     font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-right: 0;
+    padding-bottom: 131px;
+    padding-top: 75px;
   }
 
   h2 {
@@ -99,7 +126,6 @@ video {
   }
 
   .evenements {
-    background: var(--orange);
     padding-bottom: 29px;
   }
 
@@ -183,10 +209,10 @@ video {
   }
 
   h5 {
-    color: var(--button-title);
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: var(--button-title);
   }
 
   .text-menu {
@@ -206,17 +232,19 @@ video {
     margin-left: 1px;
   }
 
-  .valeurs {
-    background: var(--orange);
+  .img-valeurs {
+    width: calc(100% + 24px);
+    margin-left: -12px;
+  }
+
+  .img-vegan {
+    width: calc(100% + 24px);
+    margin-left: -12px;
   }
 
   .text-white {
     margin-bottom: 24px;
     color: var(--blanco);
-  }
-
-  span {
-    color: var(--button-title);
   }
 
   .text-source {
@@ -227,12 +255,12 @@ video {
     margin-bottom: 79px;
   }
 
-  .vegan {
-    background: var(--orange);
-  }
-
   .contact {
     padding-bottom: 109px;
+  }
+
+  .img-maps {
+    width: 100%;
   }
 
   hr {
@@ -271,16 +299,37 @@ video {
 
   footer {
     background: var(--color-footer-haeder);
+    padding-bottom: 23px;
   }
 
   .title-footer {
     color: var(--blanco);
+    margin-bottom: 40px;
+    margin-top: 24px;
   }
 
   .mail-box {
     display: flex;
     color: var(--color-footer-haeder);
     background: var(--blanco);
+    padding: 6px 11px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mail-box > a {
+    text-decoration: none;
+  }
+
+  .footer-button {
+    color: var(--blanco);
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    display: block;
   }
 
   .desktop {
