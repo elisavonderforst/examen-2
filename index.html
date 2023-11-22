@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Jakarta: votre restaurant</title>
+    <title>Jakarta: votre restaurant !</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -20,14 +20,61 @@
           <div class="row">
             <div class="col-12">
               <div id="header" class="header-nav">
-                <nav>
+                <nav class="burger-menu-close">
                   <a href="###">Présentation</a>
                   <a href="">Évènements</a>
                   <a href="">Cartes</a>
                   <a href="">Valeurs</a>
                   <a href="">Information</a>
-                  <img src="img/burger.svg" alt="burger menu" />
+                  <img
+                    class="button-burger"
+                    src="img/burger.svg"
+                    alt="burger menu"
+                  />
                 </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="burger-menu-open">
+        <div>
+          <div class="burger-main">
+            <h1 class="logo-burger">Jakarta</h1>
+            <nav class="nav-burger-open">
+              <a class="a-click" href="">Presentation</a>
+              <a class="a-click" href="">evenements</a>
+              <a class="a-click" href="">Cartes</a>
+              <a class="a-click" href="">Valeurs</a>
+              <a class="a-click" href="">Provenance</a>
+              <a class="a-click" href="">Vegan</a>
+              <a class="a-click" href="">Information</a>
+            </nav>
+            <nav class="reseau-burger">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="img/insta_red.svg" alt="" />
+              </a>
+              <a href="https://www.facebook.com/?locale=fr_FR" target="_blank">
+                <img src="img/facebook_red.svg" alt="" />
+              </a>
+              <a href="https://fr.linkedin.com/" target="_blank">
+                <img src="img/linkedIn_red.svg" alt="" />
+              </a>
+              <a href="https://web.telegram.org/a/" target="_blank">
+                <img src="img/telegrame_red.svg" alt="" />
+              </a>
+            </nav>
+            <div class="newsletter-burger">
+              <h2 class="title-footer">Newsletter</h2>
+              <div class="mail-box">
+                <a href="mailto:jakarta.restaurant@gmail.com" target="_blank">
+                  <p>Jakarta.restaurant@gmail.com</p>
+                </a>
+                <img
+                  class="icon_fleche-footer"
+                  src="img/icon-fleche_footer.svg"
+                  alt="flèche icon pour que l'on appuie pour aller écrire un mail"
+                />
               </div>
             </div>
           </div>
@@ -43,8 +90,8 @@
         </div>
       </section>
     </header>
-    <main>
-      <section class="Presentation">
+    <main class="main">
+      <section id="presentation" class="Presentation">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-11">
@@ -62,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section class="evenements">
+      <section id="event" class="evenements">
         <div class="container">
           <div class="row">
             <div class="col- col-xl-11">
@@ -146,7 +193,7 @@
           </div>
         </div>
       </section>
-      <section class="menus">
+      <section id="menus" class="menus">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-11">
@@ -241,7 +288,7 @@
           </div>
         </div>
       </section>
-      <section class="valeurs">
+      <section id="valeur" class="valeurs">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-6">
@@ -267,11 +314,11 @@
           </div>
         </div>
       </section>
-      <section class="provance">
+      <section id="provenance" class="provenance">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-11">
-              <h2 class="title">Provance des ingredients</h2>
+              <h2 class="title">Provenance des ingredients</h2>
             </div>
             <div class="col-9 offset-3 col-xl-6">
               <p class="text-source">
@@ -294,7 +341,7 @@
           </div>
         </div>
       </section>
-      <section class="vegan">
+      <section id="vegan" class="vegan">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-6">
@@ -321,7 +368,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="info" class="contact">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-6">
@@ -380,7 +427,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-6">
@@ -408,4 +455,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/main.js"></script>
 </html>
