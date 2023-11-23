@@ -47,10 +47,34 @@ h1 {
   text-transform: uppercase;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
+.date {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.button {
+  background: var(--button-title);
+  color: var(--blanco);
+  font-weight: 700;
+  padding: 10px 39px;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+
 .evenements,
 .vegan,
 .valeurs {
   background: var(--orange);
+}
+
+header,
+footer {
+  background: var(--color-footer-haeder);
 }
 
 .text-white {
@@ -59,14 +83,6 @@ h1 {
 
 .title-orange {
   color: var(--blanco);
-}
-
-.burger-menu {
-  background: var(--color-footer-haeder);
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
 }
 
 span {
@@ -78,6 +94,14 @@ a {
 }
 
 @media (max-width: 500px) {
+  .burger-menu {
+    background: var(--color-footer-haeder);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+
   .header-nav {
     display: flex;
     justify-content: end;
@@ -212,8 +236,6 @@ a {
   }
 
   h3 {
-    text-transform: uppercase;
-    font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 700;
     padding-top: 12px;
@@ -221,10 +243,7 @@ a {
   }
 
   .date {
-    font-family: Inter;
     font-size: 14px;
-    font-style: italic;
-    font-weight: 200;
     padding-left: 9px;
     padding-bottom: 15px;
   }
@@ -247,15 +266,7 @@ a {
   }
 
   .button {
-    background: var(--button-title);
-    color: var(--blanco);
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    padding: 10px 39px;
     font-size: 14px;
-    border-radius: 10px;
-    display: block;
-    text-align: center;
   }
 
   .evenements-button {
@@ -361,7 +372,6 @@ a {
   }
 
   footer {
-    background: var(--color-footer-haeder);
     padding-bottom: 23px;
   }
 
@@ -411,8 +421,27 @@ a {
 }
 
 @media (min-width: 501px) and (max-width: 2000px) {
+  .burger-menu-open {
+    display: none;
+  }
+
+  .burger-menu-close > a {
+    color: var(--blanco);
+    font-size: 30px;
+    font-weight: 900;
+    padding-right: 32px;
+  }
+
+  .burger-menu-close {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .img-header {
     background-image: url(../img/header_bg_desktop.png);
+    background-repeat: none;
+    padding-top: 237px;
+    padding-bottom: 337px;
   }
 
   h1 {
@@ -424,7 +453,56 @@ a {
     text-transform: uppercase;
   }
 
-  .burger-menu-open {
+  h2 {
+    color: var(--orange);
+    font-size: 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .block-text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  .date {
+    font-style: italic;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .text-evenement {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  .section-evenement {
+    display: flex;
+    flex-direction: column;
+    background: var(--blanco);
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .img-vegan {
+    width: calc(100% + 24px);
+    margin-left: -12px;
+  }
+
+  .phone {
     display: none;
   }
 }
