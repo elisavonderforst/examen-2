@@ -498,10 +498,6 @@ hr {
     padding-left: 30px;
   }
 
-  h5 {
-    font-size: 32px;
-  }
-
   .text-evenement {
     font-size: 20px;
     padding: 10px 30px;
@@ -523,15 +519,30 @@ hr {
 
   .menu-carte {
     background: var(--carte-menu);
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    margin-top: 50px;
     height: 682px;
     flex-shrink: 0;
+    padding: 15px;
+  }
+
+  h5 {
+    font-size: 32px;
+    padding-bottom: 9px;
+    padding-left: 30px;
   }
 
   .text-menu {
     color: var(--orange);
     font-size: 20px;
     font-weight: 500;
+    padding-bottom: 30px;
+  }
+
+  .button {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .text-source {
@@ -561,10 +572,19 @@ hr {
     color: var(--blanco);
   }
 
+  .contact {
+    padding-top: 110px;
+  }
+
   .title-contact {
     color: var(--button-title);
     font-size: 36px;
     font-weight: 500;
+  }
+
+  h6 {
+    font-size: 25px;
+    font-weight: 400;
   }
 
   .img-maps {
@@ -573,6 +593,11 @@ hr {
 
   .hr-maps {
     display: none;
+  }
+
+  .social-network {
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   p {
@@ -594,6 +619,12 @@ hr {
 
   .footer {
     padding-bottom: 40px;
+  }
+
+  .title-footer {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
   }
 
   .footer-button {
