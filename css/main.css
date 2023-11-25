@@ -529,7 +529,6 @@ hr {
   h5 {
     font-size: 32px;
     padding-bottom: 9px;
-    padding-left: 30px;
   }
 
   .text-menu {
@@ -573,7 +572,8 @@ hr {
   }
 
   .contact {
-    padding-top: 110px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .title-contact {
@@ -582,9 +582,17 @@ hr {
     font-weight: 500;
   }
 
+  .contact-block {
+    padding-left: 30px;
+  }
+
   h6 {
     font-size: 25px;
     font-weight: 400;
+  }
+
+  .contact-block > h3 {
+    padding-left: 0;
   }
 
   .img-maps {
@@ -603,7 +611,6 @@ hr {
   p {
     font-size: 25px;
     font-weight: 400;
-    padding-left: 30px;
   }
 
   .mail-box {
