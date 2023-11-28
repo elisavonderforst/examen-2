@@ -14,18 +14,20 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <section class="burger-menu">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <div id="header" class="header-nav">
+              <div class="header-nav">
                 <nav class="burger-menu-close">
-                  <a href="###">Présentation</a>
-                  <a href="">Évènements</a>
-                  <a href="">Cartes</a>
-                  <a href="">Valeurs</a>
-                  <a href="">Information</a>
+                  <a class="burger-a" href="#presentation">Présentation</a>
+                  <a class="burger-a" href="#event">Évènements</a>
+                  <a class="burger-a" href="#menus">Cartes</a>
+                  <a class="burger-a" href="#valeur">Valeurs</a>
+                  <a class="burger-a" href="#provenance">Provenance</a>
+                  <a class="burger-a" href="#vegan">Vegan</a>
+                  <a class="burger-a" href="#contact">Information</a>
                   <img
                     class="button-burger phone"
                     src="img/burger.svg"
@@ -65,7 +67,7 @@
               </a>
             </nav>
             <div class="newsletter-burger">
-              <h2 class="title-footer">Newsletter</h2>
+              <h2 class="title-newsletters">Newsletter</h2>
               <div class="mail-box">
                 <a href="mailto:jakarta.restaurant@gmail.com" target="_blank">
                   <p>Jakarta.restaurant@gmail.com</p>
@@ -183,15 +185,29 @@
                 </div>
               </div>
             </div>
-            <div class="col-9 offset-1 col-md-4">
-              <nav>
-                <a
-                  class="button evenements-button"
-                  href="https://www.nouveaumonde.ch/"
-                  target="_blank"
-                  >Voir encore plus d'évènements</a
-                >
-              </nav>
+            <div class="desktop">
+              <div class="col-md-6 offset-3">
+                <nav>
+                  <a
+                    class="button evenements-button"
+                    href="https://www.nouveaumonde.ch/"
+                    target="_blank"
+                    >Voir encore plus d'évènements</a
+                  >
+                </nav>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="col-9 offset-1">
+                <nav>
+                  <a
+                    class="button evenements-button"
+                    href="https://www.nouveaumonde.ch/"
+                    target="_blank"
+                    >Voir encore plus d'évènements</a
+                  >
+                </nav>
+              </div>
             </div>
           </div>
         </div>
@@ -293,7 +309,7 @@
           <div class="row">
             <div class="col-12 col-xl-6">
               <h2 class="title-orange">Valeurs</h2>
-              <div class="col-9 col-xl-9">
+              <div class="col-11 col-xl-9">
                 <p class="block-text text-white text-white-valeurs">
                   Notre restaurant est bien plus qu'un simple lieu pour se
                   restaurer ; c'est un lieu où vous pouvez vous installer, vous
@@ -322,11 +338,11 @@
       <section id="provenance" class="provenance">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-xl-11">
+            <div class="col-12 col-xl-5">
               <h2 class="title">Provenance des ingredients</h2>
             </div>
             <div class="flex-source">
-              <div class="col-9 offset-3 col-xl-6">
+              <div class="col-9 col-xl-4">
                 <p class="text-source">
                   <span>Poulet</span>: Suisse
                   <br />
@@ -335,7 +351,7 @@
                   <span>Poisson</span>: France
                 </p>
               </div>
-              <div class="col-9 offset-3 col-xl-6">
+              <div class="col-9 col-xl-4">
                 <p class="text-source source-two">
                   <span>Tofu</span>: Suisse
                   <br />
@@ -375,7 +391,7 @@
           </div>
         </div>
       </section>
-      <section id="info" class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="row">
             <div class="col-12 col-xl-6">
@@ -447,7 +463,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-xl-6">
-            <h2 class="title-footer">Newsletter</h2>
+            <h2 class="title-newsletters">Newsletter</h2>
             <div class="mail-box">
               <a href="mailto:jakarta.restaurant@gmail.com" target="_blank">
                 <p>Jakarta.restaurant@gmail.com</p>

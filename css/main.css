@@ -16,12 +16,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
-}
-
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,8 +25,15 @@ body {
   line-height: 1.25;
 }
 
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img,
@@ -45,10 +46,18 @@ h1 {
   text-align: center;
   font-family: "Paytone One", sans-serif;
   text-transform: uppercase;
+  color: var(--blanco);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
 }
 
 h3 {
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 h5 {
@@ -69,6 +78,18 @@ h5 {
   border-radius: 10px;
   display: block;
   text-align: center;
+}
+
+.button:hover {
+  background: var(--color-footer-haeder);
+}
+
+.icon-arrow:hover {
+  background: var(--color-footer-haeder);
+}
+
+.burger-a:hover {
+  border-bottom: 2px solid var(--blanco);
 }
 
 .evenements,
@@ -94,12 +115,55 @@ span {
   color: var(--button-title);
 }
 
-a {
-  text-decoration: none;
-}
-
 hr {
   border: 3px solid var(--orange);
+}
+
+.section-evenement {
+  background: var(--blanco);
+  overflow: hidden;
+}
+
+.icon-arrow {
+  border-radius: 5px;
+  background: var(--button-title);
+}
+
+.menu-carte {
+  background: var(--carte-menu);
+}
+
+.text-menu {
+  color: var(--orange);
+  font-weight: 500;
+}
+
+.title-contact {
+  color: var(--button-title);
+  font-weight: 600;
+}
+
+.title-newsletters {
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+.mail-box {
+  display: flex;
+  color: var(--color-footer-haeder);
+  background: var(--blanco);
+  padding: 6px 15px;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button {
+  color: var(--blanco);
+  font-weight: 700;
+  text-align: center;
+  display: block;
 }
 
 @media (max-width: 500px) {
@@ -140,9 +204,7 @@ hr {
     display: flex;
     flex-direction: column;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     padding-bottom: 75px;
     padding-left: 20px;
     color: var(--button-title);
@@ -160,24 +222,17 @@ hr {
 
   .newsletter-burger {
     background: var(--color-footer-haeder);
-    padding-bottom: 34px;
+    padding-bottom: 70px;
   }
 
-  .newsletter-burger > .title-footer {
+  .newsletter-burger > .title-newsletters {
     font-size: 20px;
-    font-weight: 600;
     padding-top: 20px;
     padding-left: 20px;
   }
 
   .newsletter-burger > .mail-box {
     margin: 0 20px;
-    background: var(--blanco);
-    padding: 6px 11px;
-    text-align: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
     text-transform: lowercase;
   }
 
@@ -188,11 +243,8 @@ hr {
   }
 
   h1 {
-    color: var(--blanco);
     font-size: 50px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin: 0;
     padding-bottom: 131px;
     padding-top: 75px;
@@ -207,18 +259,13 @@ hr {
   h2 {
     overflow: hidden;
     color: var(--orange);
-    font-family: Inter;
-    text-transform: uppercase;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     margin-top: 45px;
     margin-bottom: 20px;
   }
 
   .block-text {
-    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 92px;
@@ -229,7 +276,6 @@ hr {
   }
 
   .title-orange {
-    color: var(--blanco);
     margin-top: 19px;
     margin-bottom: 23px;
   }
@@ -246,7 +292,6 @@ hr {
 
   h3 {
     font-size: 22px;
-    font-weight: 700;
     padding-top: 12px;
     padding-left: 9px;
   }
@@ -258,8 +303,6 @@ hr {
   }
 
   .icon-arrow {
-    border-radius: 5px;
-    background: var(--button-title);
     padding: 6px 11px 4px;
     align-self: flex-end;
     margin-bottom: 10px;
@@ -278,7 +321,12 @@ hr {
     font-size: 14px;
   }
 
+  .evenements {
+    display: flex;
+  }
+
   .evenements-button {
+    justify-content: center;
     margin-left: 16px;
     margin-right: 0;
   }
@@ -288,7 +336,6 @@ hr {
   }
 
   .menu-carte {
-    background: var(--carte-menu);
     padding: 35px 15px 6px;
     margin-bottom: 27px;
   }
@@ -299,7 +346,6 @@ hr {
   }
 
   .text-menu {
-    color: var(--orange);
     font-size: 12px;
     margin-left: 80px;
     margin-bottom: 27px;
@@ -323,6 +369,10 @@ hr {
     margin-left: -12px;
   }
 
+  .text-white-valeurs {
+    margin-left: 95px;
+  }
+
   .img-vegan {
     width: calc(100% + 24px);
     margin-left: -12px;
@@ -335,6 +385,7 @@ hr {
 
   .text-source {
     line-height: 40px;
+    margin-left: 95px;
   }
 
   .source-two {
@@ -350,7 +401,6 @@ hr {
   }
 
   hr {
-    border: 2px solid var(--orange);
     margin-top: 21px;
     margin-bottom: 3px;
   }
@@ -360,14 +410,11 @@ hr {
   }
 
   .title-contact {
-    color: var(--button-title);
     font-size: 18px;
-    font-weight: 600;
     padding: 14px 0 14px;
   }
 
   h6 {
-    color: var(--text-black);
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 18px;
@@ -382,29 +429,9 @@ hr {
     padding-bottom: 23px;
   }
 
-  .title-footer {
-    color: var(--blanco);
+  .title-newsletters {
     margin-bottom: 40px;
     margin-top: 24px;
-  }
-
-  .mail-box {
-    display: flex;
-    color: var(--color-footer-haeder);
-    background: var(--blanco);
-    padding: 6px 11px;
-    text-align: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .footer-button {
-    color: var(--blanco);
-    font-family: "Inter", sans-serif;
-    font-weight: 700;
-    text-align: center;
-    display: block;
   }
 
   .desktop {
@@ -436,12 +463,13 @@ hr {
     color: var(--blanco);
     font-size: 30px;
     font-weight: 900;
-    padding: 30px 32px 30px 0;
   }
 
   .burger-menu-close {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
   }
 
   .img-header {
@@ -451,20 +479,17 @@ hr {
     padding-bottom: 337px;
   }
 
+  .logo-header {
+    margin-top: 0;
+  }
+
   h1 {
-    color: var(--blanco);
-    text-align: center;
-    font-family: Paytone One;
     font-size: 80px;
-    font-weight: 400;
-    text-transform: uppercase;
+    margin-top: 130px;
   }
 
   h2 {
-    color: var(--orange);
     font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
     margin-top: 92px;
   }
 
@@ -476,8 +501,6 @@ hr {
 
   h3 {
     font-size: 40px;
-    font-weight: 600;
-    line-height: normal;
     padding-left: 30px;
     padding-top: 20px;
   }
@@ -486,21 +509,30 @@ hr {
     margin-top: 40px;
   }
 
-  .date {
-    font-style: italic;
-    font-size: 20px;
-    padding-left: 30px;
-  }
-
   h4 {
     font-size: 20px;
     font-weight: 700;
     padding-left: 30px;
   }
 
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 0 20px;
+  }
+
+  .button {
+    font-size: 32px;
+  }
+
+  .date {
+    font-size: 20px;
+    padding: 0 5px 0 30px;
+  }
+
   .text-evenement {
     font-size: 20px;
-    padding: 10px 30px;
+    padding: 20px 30px;
   }
 
   .flex-section-evenement > img {
@@ -508,22 +540,31 @@ hr {
     margin-left: -12px;
   }
 
+  .flex-section-evenement {
+    margin-bottom: 10px;
+  }
+
   .section-evenement {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: var(--blanco);
-    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+  }
+
+  .icon-arrow {
+    padding: 6px 11px 6px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+
+  .evenements-button {
     margin-bottom: 30px;
+    padding: 10px 20px 10px;
   }
 
   .menu-carte {
-    background: var(--carte-menu);
     margin-bottom: 100px;
     margin-top: 50px;
     height: 682px;
-    flex-shrink: 0;
-    padding: 15px;
+    padding: 20px;
   }
 
   h5 {
@@ -532,16 +573,8 @@ hr {
   }
 
   .text-menu {
-    color: var(--orange);
     font-size: 20px;
-    font-weight: 500;
-    padding-bottom: 30px;
-  }
-
-  .button {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
+    padding: 0 0 30px;
   }
 
   .text-source {
@@ -555,20 +588,16 @@ hr {
 
   .img-valeurs {
     width: calc(100% + 24px);
-    margin-left: 41px;
+    margin-left: 75px;
   }
 
   .img-vegan {
-    width: calc(100% + 24px);
+    width: 100%;
     margin-left: -101px;
   }
 
   .text-white {
     margin-bottom: 0;
-  }
-
-  .title-footer {
-    color: var(--blanco);
   }
 
   .contact {
@@ -577,9 +606,7 @@ hr {
   }
 
   .title-contact {
-    color: var(--button-title);
     font-size: 36px;
-    font-weight: 500;
   }
 
   .contact-block {
@@ -603,48 +630,40 @@ hr {
     display: none;
   }
 
+  .contact-text {
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
   .social-network {
     padding-top: 10px;
     padding-bottom: 20px;
   }
 
-  p {
-    font-size: 25px;
-    font-weight: 400;
+  .mail-box {
+    margin-bottom: 40px;
   }
 
-  .mail-box {
-    color: var(--color-footer-haeder);
-    background: var(--blanco);
-    padding: 6px 11px;
-    text-align: center;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    text-transform: lowercase;
+  .mail-box > a > p {
+    padding: 0;
   }
 
   .footer {
     padding-bottom: 40px;
   }
 
-  .title-footer {
+  .title-newsletters {
     font-size: 40px;
-    font-weight: 600;
     margin-bottom: 40px;
   }
 
   .footer-button {
-    overflow: hidden;
-    color: var(--blanco, #fff);
-    text-align: center;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    font-family: Inter;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    padding-left: 50px;
   }
 
   .phone {
