@@ -111,14 +111,6 @@ footer {
   color: var(--blanco);
 }
 
-span {
-  color: var(--button-title);
-}
-
-hr {
-  border: 3px solid var(--orange);
-}
-
 .section-evenement {
   background: var(--blanco);
   overflow: hidden;
@@ -138,9 +130,17 @@ hr {
   font-weight: 500;
 }
 
+span {
+  color: var(--button-title);
+}
+
 .title-contact {
   color: var(--button-title);
   font-weight: 600;
+}
+
+hr {
+  border: 3px solid var(--orange);
 }
 
 .title-newsletters {
@@ -179,7 +179,7 @@ hr {
     padding: 17px 5px;
   }
 
-  .header-nav > nav > a {
+  .burger-a {
     display: none;
   }
 
@@ -207,6 +207,12 @@ hr {
     padding-left: 20px;
     color: var(--button-title);
     text-transform: uppercase;
+  }
+
+  .logo-burger {
+    color: var(--color-footer-haeder);
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
 
   .nav-burger-open > a {
@@ -247,12 +253,6 @@ hr {
     padding-top: 75px;
   }
 
-  .logo-burger {
-    color: var(--color-footer-haeder);
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
-
   h2 {
     color: var(--orange);
     font-size: 32px;
@@ -275,7 +275,6 @@ hr {
   }
 
   .section-evenement {
-    background: var(--blanco);
     margin-bottom: 29px;
   }
 
@@ -309,10 +308,6 @@ hr {
 
   .button {
     font-size: 14px;
-  }
-
-  .evenements {
-    display: flex;
   }
 
   .evenements-button {
@@ -392,14 +387,16 @@ hr {
 
   .hr-maps {
     margin-top: 93px;
+    margin-bottom: 0;
   }
 
   .title-contact {
-    font-size: 18px;
+    font-size: 20px;
     padding: 14px 0 14px;
   }
 
   h6 {
+    font-size: 18px;
     font-weight: 400;
     padding-bottom: 18px;
     padding-top: 14px;
@@ -434,13 +431,13 @@ hr {
     display: none;
   }
 
-  .burger-menu-close > a {
+  .burger-a {
     color: var(--blanco);
     font-size: 30px;
     font-weight: 900;
   }
 
-  .burger-menu-close {
+  .burger-menu-desktop {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -474,35 +471,14 @@ hr {
     margin-bottom: 180px;
   }
 
-  h3 {
-    font-size: 40px;
-    padding-left: 30px;
-    padding-top: 20px;
-  }
-
   .title-orange {
     margin-top: 40px;
   }
 
-  h4 {
-    font-size: 20px;
-    font-weight: 700;
+  h3 {
+    font-size: 40px;
     padding-left: 30px;
-  }
-
-  p {
-    font-size: 25px;
-    font-weight: 400;
-    padding: 20px 0 20px;
-  }
-
-  .button {
-    font-size: 32px;
-  }
-
-  .date {
-    font-size: 20px;
-    padding: 0 5px 0 30px;
+    padding-top: 20px;
   }
 
   .text-evenement {
@@ -522,6 +498,17 @@ hr {
   .section-evenement {
     padding-bottom: 20px;
     margin-bottom: 50px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 30px;
+  }
+
+  .date {
+    font-size: 20px;
+    padding: 0 5px 0 30px;
   }
 
   .icon-arrow {
@@ -547,9 +534,19 @@ hr {
     padding-bottom: 9px;
   }
 
+  .button {
+    font-size: 32px;
+  }
+
   .text-menu {
     font-size: 20px;
     padding: 0 0 30px;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 20px 0 20px;
   }
 
   .text-source {
