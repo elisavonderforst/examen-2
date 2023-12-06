@@ -176,8 +176,6 @@ hr {
   }
 
   .header-nav {
-    display: flex;
-    justify-content: end;
     padding: 17px 5px;
   }
 
@@ -245,7 +243,6 @@ hr {
   h1 {
     font-size: 50px;
     font-weight: 400;
-    margin: 0;
     padding-bottom: 131px;
     padding-top: 75px;
   }
@@ -257,7 +254,6 @@ hr {
   }
 
   h2 {
-    overflow: hidden;
     color: var(--orange);
     font-size: 32px;
     font-weight: 700;
@@ -266,8 +262,6 @@ hr {
   }
 
   .block-text {
-    font-size: 16px;
-    font-weight: 400;
     margin-bottom: 92px;
   }
 
@@ -313,10 +307,6 @@ hr {
     display: none;
   }
 
-  .text-evenement {
-    display: none;
-  }
-
   .button {
     font-size: 14px;
   }
@@ -351,10 +341,6 @@ hr {
     margin-bottom: 27px;
   }
 
-  .menu-two {
-    display: none;
-  }
-
   .menu-two.is-hidden {
     display: block;
   }
@@ -380,7 +366,6 @@ hr {
 
   .text-white {
     margin-bottom: 24px;
-    color: var(--blanco);
   }
 
   .text-source {
@@ -415,7 +400,6 @@ hr {
   }
 
   h6 {
-    font-size: 16px;
     font-weight: 400;
     padding-bottom: 18px;
     padding-top: 14px;
@@ -434,23 +418,14 @@ hr {
     margin-top: 24px;
   }
 
-  .desktop {
-    display: none;
-  }
-
+  .menu-two,
+  .desktop,
+  .burger-menu.is-covert,
   .main.is-covert,
   .img-header.is-covert,
   .footer.is-covert,
   .burger-menu-open.is-covert {
     display: none;
-  }
-
-  .main.is-visible,
-  .img-header.is-visible,
-  .footer.is-visible,
-  .burger-menu.is-visible,
-  .evenements-is-visible {
-    display: block;
   }
 }
 
